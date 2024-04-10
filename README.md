@@ -50,7 +50,7 @@ dotenvConfig({ path: resolve(__dirname, ".env") });
     params,
   });
 
-  console.log(response);
+  console.log(response.data);
 })();
 ```
 

@@ -4,7 +4,7 @@ import { JsonRpcSigner } from "@ethersproject/providers";
 import { config as dotenvConfig } from "dotenv";
 import { resolve } from "path";
 import { ApiKeyCreds, Chain, createL2Headers } from "@polymarket/clob-client";
-import axios, { AxiosRequestHeaders, Method } from "axios";
+import axios from "axios";
 
 dotenvConfig({ path: resolve(__dirname, ".env") });
 
@@ -45,5 +45,5 @@ dotenvConfig({ path: resolve(__dirname, ".env") });
     params,
   });
 
-  console.log(response);
+  console.log(response.data);
 })();
